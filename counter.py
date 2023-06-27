@@ -1,4 +1,15 @@
 num = int(input("Enter a positive number to the sum of all the integar from 0 to that number: "))
+
+
+if num < 0:
+    raise Exception("Positive (+) numbers only")
+
+if not type(num) is int:
+    raise Exception("Hey Genius, you can only enter numbers")
+
+
+
+
 tot, i = 0, 0
 
 while i <= num:
